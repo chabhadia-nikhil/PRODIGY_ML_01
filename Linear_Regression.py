@@ -38,6 +38,7 @@ trained = lr.fit(X_train,y_train)
 #Predicted price
 saleprice_pred = trained.predict(X_test)
 saleprice_pred = pd.DataFrame({'Square feet':test_area,'Predicition': saleprice_pred})
+print(saleprice_pred)
 
 #Displaying Accuracy
 accuracy = lr.score(X_test,y_test)*100
