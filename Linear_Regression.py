@@ -22,7 +22,7 @@ new_data = pd.concat([new_data,dummies_Neighborhood],axis =1)
 
 #creatning traininng and testing datasets
 X_train,X_test,y_train,y_test = train_test_split(new_data,y.price,test_size=0.2)
-
+test_area = X_test.SquareFeet
 #Standarising data 
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
